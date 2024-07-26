@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>456</width>
-    <height>600</height>
+    <height>445</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -75,19 +75,6 @@
      </widget>
     </item>
     <item>
-     <spacer name="vs_1">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
      <widget class="QProgressBar" name="pbar_progress">
       <property name="palette">
        <palette>
@@ -114,6 +101,9 @@
       <property name="value">
        <number>10</number>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+      </property>
      </widget>
     </item>
     <item>
@@ -129,7 +119,23 @@
       <property name="checkable">
        <bool>true</bool>
       </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
      </widget>
+    </item>
+    <item>
+     <spacer name="vs_1">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>

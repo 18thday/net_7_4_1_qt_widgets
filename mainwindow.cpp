@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Your Favourite Program");
 
     // GroupBox gb_winner param
     ui->gb_winner->setTitle("Who will win?");
@@ -19,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Progress bar pbar_progress param
     ui->pbar_progress->setRange(0, 10);
     ui->pbar_progress->setValue(0);
-    ui->pbar_progress->setAlignment(Qt::AlignCenter);
+    ui->pbar_progress->setAlignment(Qt::AlignTop);
 
     // Push Button pb_progress param
     ui->pb_progress->setText("Progress or Die");
